@@ -3,7 +3,7 @@
 ## 2026-09-13
 
 Documentation cleanup: shortened the overview, organized the proof guide and links,
-and removed obsolete notes. Mathematical definitions and proofs are unchanged.
+and removed internal guidance and obsolete notes. Mathematical definitions and proofs are unchanged.
 
 Initial formalization: free Fourier evolution, finite-band moments and spatial decay,
 continuity-based mass conservation, and strict increase of normalized left-half-line

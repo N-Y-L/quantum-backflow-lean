@@ -11,7 +11,6 @@ Local checks recorded on 13 September 2026 with Lean 4.28.0 and mathlib revision
 | Transitive audit: all 267 project declarations | Passed |
 | Compiled-proof recheck with `leanchecker QuantumBackflow` | Passed |
 | Verification-tool regression tests | 8 passed |
-| Mathematical review and documentation links | No defects found |
 
 The fresh build reused the pinned mathlib dependency cache. Its mathlib checkout was
 clean and matched the manifest. Every proof source in the delivered repository matches
