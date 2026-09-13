@@ -1,5 +1,5 @@
 {
-  "verified_at_utc": "2026-09-13T20:56:20.744240+00:00",
+  "verified_at_utc": "2026-09-13T22:21:53.060794+00:00",
   "lean_toolchain": "leanprover/lean4:v4.28.0",
   "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
   "fresh_build": true,
@@ -55,6 +55,6 @@
     "lake-manifest.json": "1dfdbd9a32e75ed78c70176bd2faaca39138665cec9d9f804246f8321bdd78d3",
     "lakefile.toml": "d50d8664d230dbf015189f7efff57e45a0a8a1be7a7b4c7d9e2f5346552a6d86",
     "lean-toolchain": "db7bb24b756d745bbde83fe92718b51bd3625dae3701ba0f598d0eedcd3f3028",
-    "references.bib": "a933e60180c9d4edcff4f1653db0bdb8b2256fbe11f296e9cd510209e7929c44"
+    "references.bib": "a0746d28c47c8a50d48ea1dcb9818046fd8c8acc2c8c2aa57cc4989a9c600565"
   }
 }
