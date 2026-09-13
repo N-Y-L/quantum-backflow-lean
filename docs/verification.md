@@ -1,6 +1,6 @@
 # Verification
 
-Verified on 13 September 2026 with Lean 4.28.0 and mathlib revision
+Local checks recorded on 13 September 2026 with Lean 4.28.0 and mathlib revision
 `8f9d9cff6bd728b17a24e163c9402775d9e6a365`.
 
 | Check | Result |
@@ -21,8 +21,8 @@ The audit selects declarations by originating module, including private declarat
 and helpers outside the public namespace. It permits only `propext`, `Classical.choice`,
 and `Quot.sound`. No unfinished proofs, added axioms, unsafe project declarations, or
 native decision procedures were found. These checks validate the stated Lean results;
-the [proof guide](proof-guide.md) gives their mathematical scope.
+the [proof guide](proof-guide.md) explains their assumptions and conclusions.
 
 [`checks/results.json`](../checks/results.json) records commands, exit codes, and source
-hashes. Regenerate the record after source changes. The GitHub workflow is configured;
-no hosted run is claimed before publication.
+hashes. Regenerate the record after source changes. Hosted workflow results are separate
+from this local record.

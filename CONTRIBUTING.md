@@ -2,8 +2,7 @@
 
 State assumptions, quantifiers, and physical conventions explicitly. Use compact prose,
 standard notation, descriptive filenames, and GitHub-rendered mathematics. Keep the
-README and proof guide consistent with the checked statements. Credit established work;
-a negative search result does not establish priority.
+README and proof guide consistent with the checked statements. Preserve attribution.
 
 Every proof must compile with the pinned toolchain and pass the dependency audit.
 Do not add unfinished proofs, new axioms, unsafe declarations, or native decision procedures.
