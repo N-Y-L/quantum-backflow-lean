@@ -63,6 +63,13 @@ lake env leanchecker QuantumBackflow
 
 The checks reject unfinished proofs and added axioms, audit transitive dependencies, and recheck compiled proofs with `leanchecker`. The permitted axioms are `propext`, `Classical.choice`, and `Quot.sound`. See the [verification report](docs/verification.md) and [check documentation](checks/README.md).
 
+## Attribution
+
+**Project lead and maintainer:** Neil Yuanting Li.
+
+**Development:** Lean formalization and mathematical drafts developed with
+OpenAI Codex under Neil Yuanting Li’s direction.
+
 ## Documentation and references
 
 The [proof guide](docs/proof-guide.md) follows the construction through its Lean modules. The [documentation index](docs/README.md) links the supporting material.

@@ -2,6 +2,9 @@
 
 ## 2026-09-13
 
+Added attribution identifying the project lead and the use of OpenAI Codex
+for Lean formalization and mathematical drafting. Proof sources are unchanged.
+
 Documentation cleanup: shortened the overview, organized the proof guide and links,
 and removed internal guidance and obsolete notes. Mathematical definitions and proofs are unchanged.
 
