@@ -4,50 +4,50 @@ A Lean 4 formalization of quantum backflow: a free particle has strictly positiv
 
 ## Mathematical statement
 
-Let $0<a<b<d<e$, and set
+Let $`0<a<b<d<e`$, and set
 
-$$
+```math
 \phi(k)=\mathbf 1_{[a,b]}(k)-r\mathbf 1_{[d,e]}(k),\qquad
 \psi(t,x)=\int_{\mathbb R}e^{i(kx-ck^2t)}\phi(k)\,dk,
 \quad c>0.
-$$
+```
 
 Assume the real spectral moments satisfy
 
-$$
+```math
 A=(b-a)-r(e-d)>0,\qquad
 B=\frac{b^2-a^2}{2}-r\frac{e^2-d^2}{2}<0.
-$$
+```
 
 Then `twoBand_backflow` proves:
 
 - The evolved spectrum has finite positive squared norm and positive momentum probability exactly one at every time.
 - The position wave has finite positive squared norm, conserved under the stated free evolution.
 - The wave satisfies the free Schrödinger equation.
-- The normalized left probability lies in $[0,1]$ at every time and, throughout some open interval around zero, has positive derivative and is strictly increasing.
+- The normalized left probability lies in $`[0,1]`$ at every time and, throughout some open interval around zero, has positive derivative and is strictly increasing.
 
 The statement is in [`MainTheorem.lean`](QuantumBackflow/MainTheorem.lean). Negative current and probability increase follow from the spectral moment inequalities.
 
-For $\phi=\mathbf{1}_{[1,2]}-\frac{1}{2}\mathbf{1}_{[3,4]}$, the spectral squared norm is $5/4$, $A=1/2$, $B=-1/4$, and the unnormalized boundary current is $-c/4$. The theorem `explicit_quantum_backflow` proves this case.
+For $`\phi=\mathbf{1}_{[1,2]}-\frac{1}{2}\mathbf{1}_{[3,4]}`$, the spectral squared norm is $`5/4`$, $`A=1/2`$, $`B=-1/4`$, and the unnormalized boundary current is $`-c/4`$. The theorem `explicit_quantum_backflow` proves this case.
 
-For every $0<a<b<d<e$, the moment inequalities hold with
+For every $`0<a<b<d<e`$, the moment inequalities hold with
 
-$$
+```math
 r=\frac{(b-a)(a+b+d+e)}{2(e-d)(d+e)}.
-$$
+```
 
 [`ArbitraryBands.lean`](QuantumBackflow/ArbitraryBands.lean) verifies this choice and places backflow at any prescribed time and boundary. [`Generalizations.lean`](QuantumBackflow/Generalizations.lean) proves that the spectrum can lie above any finite cutoff with probability one throughout evolution. These are existence results; they give no uniform lower bound on the amount or duration of backflow.
 
 ## Conventions
 
-The integration variable $k$ is wave number (named `p` in some Lean definitions). Physical momentum is $\hbar k$. For positive $\hbar$ and mass $m$, choose $c=\hbar/(2m)$; then
+The integration variable $`k`$ is wave number (named `p` in some Lean definitions). Physical momentum is $`\hbar k`$. For positive $`\hbar`$ and mass $`m`$, choose $`c=\hbar/(2m)`$; then
 
-$$
+```math
 \partial_t\psi=ci\,\partial_x^2\psi,\qquad
 j=2c\Im(\overline{\psi}\,\partial_x\psi).
-$$
+```
 
-Born probabilities are ratios of squared-norm integrals; the normalized current is $j/\int_{\mathbb R}|\psi|^2\,dx$. The [proof guide](docs/proof-guide.md#normalization) explains this convention and the analytic assumptions.
+Born probabilities are ratios of squared-norm integrals; the normalized current is $`j/\int_{\mathbb R}|\psi|^2\,dx`$. The [proof guide](docs/proof-guide.md#normalization) explains this convention and the analytic assumptions.
 
 ## Reproduce the checks
 

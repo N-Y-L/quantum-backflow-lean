@@ -2,8 +2,9 @@
 
 ## 2026-09-13
 
-Corrected equation rendering and inline mathematical notation; completed the Penz
-bibliographic record. Rechecked the build, proof dependencies, and compiled proofs.
+Corrected equation rendering and protected mathematical notation from Markdown
+parsing; completed the Penz bibliographic record. Rechecked the build, proof
+dependencies, and compiled proofs.
 
 Documentation cleanup: shortened the overview, organized the proof guide and links,
 and removed internal guidance and obsolete notes. Mathematical definitions and proofs are unchanged.
