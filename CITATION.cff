@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Cite this repository and the commit used."
+title: "Quantum backflow in Lean"
+authors:
+  - family-names: "Li"
+    given-names: "Neil Yuanting"
+license: Apache-2.0
+version: 0.1.0

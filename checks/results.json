@@ -1,0 +1,70 @@
+{
+  "verified_at_utc": "2026-09-13T20:56:20.744240+00:00",
+  "lean_toolchain": "leanprover/lean4:v4.28.0",
+  "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "fresh_build": true,
+  "shared_pinned_dependency_cache": true,
+  "library_modules": 12,
+  "lean_files_scanned": 14,
+  "project_declarations_audited": 267,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "regression_tests_passed": 8,
+  "commands": [
+    {
+      "command": "lake build --wfail",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m unittest discover -s checks -p test_*.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 checks/check_proofs.py",
+      "exit_code": 0
+    },
+    {
+      "command": "lake env leanchecker QuantumBackflow",
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    ".github/workflows/lean.yml": "ee54f92bef7fdb11062673c1b8b99d43e67887c7f946dd9ed3070acc0ff59999",
+    ".gitignore": "70fb30ab4baf2600ac4b9ca39b4524130c899497c0161dd855430c98ec9d4781",
+    "AGENTS.md": "496eca4fb305dc1d9387407c5ee8d7c9dc9c9d359147e78b6dabeb8796d3944d",
+    "CITATION.cff": "406c429b312a2d716e65a421714e76d77f595824d395a751049376ea71994231",
+    "CONTRIBUTING.md": "831e7561df26ed6b33e99990c43a593d4261384933b488e88e8ee972699b0b52",
+    "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "QuantumBackflow/ArbitraryBands.lean": "94ecaccea6919cdca1667d0e15d2de36553ad17ed269017454f74dc42cc47635",
+    "QuantumBackflow/BandEvolution.lean": "a393cf098c03dc1ac5859be30d0a038787e30b1a1cade067a63398e000d1fd7b",
+    "QuantumBackflow/BandRegularity.lean": "70ab7abe7e823df6521ae6d7871a56e7d0f196f915c54d652184da276dfc0836",
+    "QuantumBackflow/DecayRegularity.lean": "9fc322ebb21b6d794efb11759ce2aa9c798597348f3f8f142f9465c1dd92c3cc",
+    "QuantumBackflow/FourierDecay.lean": "51c20c8036a450c1831393e54c276d605f56d0202ade6ea506636e9884b08018",
+    "QuantumBackflow/FreeEvolution.lean": "8601c629b2ee72a196207a4bddece6cb4e87ae2fcc3635fc6b4edbae167dc919",
+    "QuantumBackflow/Generalizations.lean": "08abd61cf994e127a985d42ec9cc7cec77dbfd56e5af5dd3a27e0f6cc5633e30",
+    "QuantumBackflow/MainTheorem.lean": "b5fac8e27f89cdce31fdf74c721f98293c956b7a99558a4c192adddf3c07d25f",
+    "QuantumBackflow/Packets.lean": "78191d54125066d8bc19dba64a52be29fd65d20dcef0f4ba95106acb7723c690",
+    "QuantumBackflow/ProbabilityFlux.lean": "aa0c88932d600c7d65704a16ea1a24fef02428cfed54e0026051d69800862fd1",
+    "QuantumBackflow/ShiftRegularity.lean": "6b01857985b510487287583a85bf835d276faaeb013f5b6e0492dc22962e1acc",
+    "QuantumBackflow/Translation.lean": "43b357b8d031a7d20134fe50842ffda4a1f7a299aa1e5e5d56cb5a7334cab8f8",
+    "QuantumBackflow.lean": "12ac3d324c86d25d95592b8ae5ebab7b71f4d340e643c3b18f88b2b4a95991fc",
+    "README.md": "51c15f70cc38c8db837bd2f2a9a8bdd2f7872b58ac8c19dd67dad42c93fd144f",
+    "UPDATES.md": "30a0b67823474d231d4cb832ab4a8b1b69a860818a5edd7531bb92b38caf1315",
+    "checks/Axioms.lean": "468b09d2be51ce3d49eb0f51d2f0c0e8b2bf82a66be6f75c9c5be101e4fccfbd",
+    "checks/README.md": "16a44a0e4b11df74e16621e701d79dab013b0a1d3abc2d6fcd12ac596730e1cf",
+    "checks/check_proofs.py": "31779bb94c67d272ed7fc557d9f421945eb7cf856e168b47c783b60907a0d0d8",
+    "checks/test_check_proofs.py": "41d41b732767035d79a9f423d208e467c810336253af5537ae0e732489f82ae7",
+    "docs/README.md": "418dd5359759fa2416b254e1cfeb537198c142d47c2884a1e95e073ae699ef84",
+    "docs/prior-art.md": "72b366bc4d46f75c7081f5e6b7e1430ff2dbcf6e404fbba2e46cf95e582b0924",
+    "docs/proof-guide.md": "e0904d567ab39a0602e5c1f4ae4ca037193cdf58b02cf379128dafc0626e44f9",
+    "docs/publication.md": "d93bd07c241ef536f18904199f118679b68fdb7c900407a8b2685042fe3fec79",
+    "docs/verification.md": "7d94188204a444cc061b90e7cea04d8895918343979b35939f060d366175c708",
+    "lake-manifest.json": "1dfdbd9a32e75ed78c70176bd2faaca39138665cec9d9f804246f8321bdd78d3",
+    "lakefile.toml": "d50d8664d230dbf015189f7efff57e45a0a8a1be7a7b4c7d9e2f5346552a6d86",
+    "lean-toolchain": "db7bb24b756d745bbde83fe92718b51bd3625dae3701ba0f598d0eedcd3f3028",
+    "references.bib": "a933e60180c9d4edcff4f1653db0bdb8b2256fbe11f296e9cd510209e7929c44"
+  }
+}
