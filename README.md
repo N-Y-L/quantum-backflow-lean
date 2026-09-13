@@ -67,6 +67,8 @@ The checks reject unfinished proofs and added axioms, audit transitive dependenc
 
 **Project lead and maintainer:** Neil Yuanting Li.
 
+**Development:** Lean formalization and mathematical drafts developed with OpenAI Codex under Neil Yuanting Li’s direction.
+
 ## Documentation and references
 
 The [proof guide](docs/proof-guide.md) follows the construction through its Lean modules. The [documentation index](docs/README.md) links the supporting material.
